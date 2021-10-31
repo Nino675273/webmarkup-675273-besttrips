@@ -123,8 +123,9 @@ body {
 }
 
 .destinations > section > footer {
-  background-color: navy;
-  padding: 8px;
+  background-color: #666;
+  padding: 7px;
+  text-align: center;
 }
 
 .destinations > section > footer > a {
@@ -144,7 +145,7 @@ body {
   grid-area: article;
 }
 
-/* Grid */
+/* Grid Elements */
 #contentGrid {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -195,7 +196,7 @@ body {
   display: grid;
   grid-template-areas:
     "article article"
-    "eu_table products";
+    "contactTable Destinations";
 }
 
 #cookie {
@@ -209,18 +210,18 @@ body {
   padding: 8px;
 }
 
-.eu_article {
+.tickets_article {
   grid-area: article;
 }
 
-.eu_table {
-  grid-area: eu_table;
+.contactTable {
+  grid-area: contactTable;
 }
 
-.eu_products {
+.destinationsAside {
 }
 
-#productPage h1 {
+#mainPage h1 {
   font-size: 24px;
 }
 
@@ -232,29 +233,29 @@ body {
   font-size: 24px;
 }
 
-#mainProducts {
+#mainDestinations {
   display: flex;
   flex-wrap: wrap;
 }
 
 .copyrightFooter {
-  background-color: #213d23;
+  background-color: #444;
   color: white;
   padding: 14px 16px;
-  margin-top: 16px;
+  margin-top: 66px;
 }
 
 #articleList {
   display: flex;
 }
 
-#eu_articleList {
+#destinationsList {
   display: flex;
   flex-direction: column;
   padding: 16px;
 }
 
-#eu_articleList article {
+#destinationsList article {
   margin: 16px;
 }
 
@@ -286,11 +287,11 @@ body {
 }
 
 .card a {
-  border: none;
+
+  background-color: #444;
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #213d23;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -336,11 +337,13 @@ body {
 #tableFooter {
   padding: 5px;
   width: 230px;
-  background-color: #213d23;
+  background-color: #444;
   color: white;
 }
 
-#products_aside {
+
+
+#Destinations_aside {
   display: flex;
   flex-direction: column;
 }
@@ -401,20 +404,6 @@ body {
   order: 3;
   float: right;
 }
-
-#howsolarFlexContainer {
-  display: flex;
-  flex-direction: column;
-}
-
-#howsolarFlexContainer > :nth-child(1) {
-  order: 1;
-}
-
-#howsolarFlexContainer > :nth-child(2) {
-  order: 2;
-}
-
 .sectionTitle::first-letter {
   color: #213d23;
   font-size: 110%;
@@ -424,8 +413,8 @@ body {
   #gridTickets {
     grid-template-areas:
       "article article"
-      "eu_table eu_table"
-      "products products";
+      "contactTable contactTable"
+      "tickets tickets";
   }
 
   .destinations {
@@ -436,7 +425,7 @@ body {
     display: none;
   }
 
-  #mainProducts {
+  #mainDestinations {
     flex-direction: column-reverse;
   }
   #indexFlexContainer > :nth-child(1) {
