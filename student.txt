@@ -1,4 +1,4 @@
 Student name: Nino van Alphen
 Student number: 675273
 Student class: HAINFVT2B
-URL student GitHub repository: https://github.com/Nino675273/webmarkup-675273-besttrips
+URL student GitHub repository: https://github.com/Nino675273/webmarkup-675273-besttrips 
