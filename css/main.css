@@ -196,7 +196,7 @@ body {
   display: grid;
   grid-template-areas:
     "article article"
-    "contactTable Destinations";
+    "contactTable Destination";
 }
 
 #cookie {
