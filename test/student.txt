@@ -1,4 +1,0 @@
-Student name: Laurens van Coeverden
-Student number: 671837
-Student class: HAINFVT1B
-URL student GitHub repository: https://github.com/Laurensvanc/i-want-solar-energy.com

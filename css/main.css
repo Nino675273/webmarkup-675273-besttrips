@@ -11,10 +11,6 @@ body {
   line-height: 2.5;
 }
 
-.word_spacing {
-  word-spacing: -.4ch;
-}
-
 .hidden {
   visibility: hidden;;
 }
@@ -48,23 +44,23 @@ body {
 }
 
 /* for the Navigation */
-.navbar {
+.navHeader {
   position: sticky;
 }
 
-.navbar ul {
+.navHeader ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
+  top: 0;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #213d23;
+  background-color: #444;
   position: sticky;
-  top: 0;
 }
 
-.navbar li a {
+.navHeader li a {
   display: block;
   color: white;
   text-align: center;
@@ -72,37 +68,9 @@ body {
   text-decoration: none;
 }
 
-.navbar li a:hover {
+.navHeader li a:hover {
   background-color: #000000;
-}
-
-#hamburgerLabel {
-  display: inline-block;
-  color: white;
-  background: #a02620;
-  font-style: normal;
-  font-size: 1.2em;
-  padding: 10px;
-}
-
-#burgeritems > li {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  border-top: 1px solid #333;
-}
-
-#burgeritems > li {
-  display: none;
-}
-
-#burgeritems > input:checked ~ .navbarItem {
-  display: block;
-}
-
-#hamburgerIcon,
-#hamburgerLabel {
-  display: none;
+  border-radius: 10px;
 }
 
 .absolute{
@@ -113,20 +81,7 @@ body {
   position: relative;
 }
 
-/* Content */
-#mainContent {
-  margin-left: 10%;
-  margin-right: 10%;
-  height: 100%;
-  width: 80%;
-}
-
-#contactArticle {
-  grid-area: article;
-}
-
-/* Content items*/
-
+/* For Video on Index*/
 #mainVideo {
   width: 100%;
   justify-content: center;
@@ -137,46 +92,59 @@ body {
 }
 
 #mainVideo video {
-  width: 384px;
-  height: 384px;
+  width: 400px;
+  height: 400px;
   border-style: solid;
-  border-color: #5a5a5a;
-  border-width: 3px;
+  border-color: #000000;
+  border-width: 4px;
+  border-radius: 4px;
 }
 
-/* product card */
-.productCard {
+/* Destinations on Index */
+.destinations {
   display: flex;
+  border-color: #000000;
   border-style: solid;
-  border-color: #5a5a5a;
   border-radius: 8px;
   margin-top: 16px;
 }
 
-.productCard article {
+.destinations article {
   margin: 16px;
   padding: 16px;
 }
 
-.productCard > section > figure {
+.destinations > section > figure {
   margin: 16px;
 }
 
-.productCard > section > figure > a > img {
+.destinations > section > figure > a > img {
   width: 256px;
 }
 
-.productCard > section > footer {
+.destinations > section > footer {
   background-color: navy;
   padding: 8px;
 }
 
-.productCard > section > footer > a {
+.destinations > section > footer > a {
   color: white;
   text-decoration: none;
 }
 
-/* grid */
+/* Content on every page */
+#mainContent {
+  height: 100%;
+  width: 80%;
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+#contactArticle {
+  grid-area: article;
+}
+
+/* Grid */
 #contentGrid {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -219,7 +187,7 @@ body {
   grid-area: six;
 }
 
-#eusolar_grid {
+#gridTickets {
   margin-left: 10%;
   margin-right: 10%;
   height: 100%;
@@ -250,7 +218,6 @@ body {
 }
 
 .eu_products {
-  grid-area: products;
 }
 
 #productPage h1 {
@@ -454,14 +421,14 @@ body {
 }
 
 @media (max-width: 1179px) {
-  #eusolar_grid {
+  #gridTickets {
     grid-template-areas:
       "article article"
       "eu_table eu_table"
       "products products";
   }
 
-  .productCard {
+  .destinations {
     flex-direction: row-reverse;
   }
 
